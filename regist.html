@@ -21,16 +21,16 @@
                     <h5 class="card-title mb-3">Registration</h5>
                 <form action="" id="form">
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
                         <label for="floatingInput">Email address</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="username" class="form-control" id="uname" placeholder="Username">
+                        <input type="username" class="form-control" name="username" id="uname" placeholder="Username">
                         <label for="floatingUname">Username</label>
                     </div>
-                    <input type="hidden" id="role" name="role" value="true">
+                    <input type="hidden" id="role" name="role" value="user">
                     <div class="form-floating mb-3">
-                        <input type="password" class="form-control" id="pword" placeholder="Password">
+                        <input type="password" class="form-control" name="password" id="pword" placeholder="Password">
                         <label for="floatingPassword">Password</label>
                     </div>
                     <button type="submit" class="btn btn-success">Register</button>
@@ -46,7 +46,7 @@
     </div>
 
    
-    <script src="regist.js"></script>
+    <script src="script/regist.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
