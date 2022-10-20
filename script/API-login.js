@@ -20,8 +20,7 @@ let userData = async () => {
   let users = await response.json();
   let obj = users.find(o => o.role === 'admin')
   
- 
-if(role == obj.role){
+if(obj.role === role){
   let cekData = 
         users.some(user =>
         user.email == uemail && 
