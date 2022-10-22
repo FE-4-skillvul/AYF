@@ -13,7 +13,7 @@ a{
     width: 100%;
     text-align: center;
     padding: 10px 0;
-    background-color: #5eb984;
+    background-color: #198754;
     color: #fff;
     
 }
@@ -226,3 +226,7 @@ label {
     background-color: var(--black-base);
     transition: 0.4s;
 }
+body{
+    background-image: linear-gradient(90deg, rgba(172,215,175,1) 0%, rgba(254,254,254,1) 100%);
+}
+
