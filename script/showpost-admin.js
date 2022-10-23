@@ -30,7 +30,7 @@ const getPosts = async url => {
           articleElement.innerHTML = `
               <div class="card w-75 card border-success mb-3 m-auto">
               <div class="card-body">
-                <h5 class="card-title">${x.title}</h5>
+                <h5 class="card-title border-bottom border-success">${x.title}</h5>
                 <p class="card-text">
                   ${x.content}
                 </p>
