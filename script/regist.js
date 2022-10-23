@@ -13,5 +13,5 @@ let form = document.getElementById('form');
     }).then(res => res.json())
         .then(alert("Akun Berhasil Dibuat!"))
             .then(location.href="login.html")
-          .catch(err => alert(err))
+          .catch(err => console.log(err))
   });

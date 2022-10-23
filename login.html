@@ -13,7 +13,7 @@
     <div class="card mb-4">
         <div class="row g-0">
           <div class="col-md-6 d-none d-md-block">
-            <img src="img/tangga.jpg" style="max-height: 90vh;" class="img-fluid rounded-start" alt="...">
+            <img src="img/sepatu.jpg" style="max-height: 90vh;" class="img-fluid rounded-start" alt="...">
           </div>
           <div class="col-md-6 mx-auto">
             <div class="card-body text-center">
@@ -21,25 +21,23 @@
                 <h5 class="card-title mb-3">Sign in</h5>
                 <form action="" id="form2">
                   <div class="form-floating mb-3">
-                      <input type="email" class="form-control" id="email2" placeholder="Email">
+                      <input type="email" class="form-control" id="email2" placeholder="Email" required minlength="8">
                       <label for="floatingUname">email</label>
                   </div>
                   <div class="form-floating mb-3">
-                      <input type="password" class="form-control" id="pword2" placeholder="Password">
+                      <input type="password" class="form-control" id="pword2" placeholder="Password" required minlength="5">
                       <label for="floatingPassword">Password</label>
                   </div>
                   
-                    <select class="form-select mb-3" id="role" aria-label="Default select example">
+                    <!-- <select class="form-select mb-3" id="role" aria-label="Default select example">
                       <option selected>Role</option>
                       <option value="user">User</option>
                       <option value="admin">Admin</option>
-                    </select>
+                    </select> -->
                     
-                
-
                   <button type="submit" class="btn btn-success">Login</button>
                   <div class="container mt-3" id="account">
-                    <span class="d-inline">Don't have an account? <a href="regist.html" class="sign-up d-inline">Register</a></span>
+                    <span class="d-inline">Don't have an account? <a href="regist.html" class="sign-up d-inline text-success">Register</a></span>
                   </div>
               </form>
             </div>

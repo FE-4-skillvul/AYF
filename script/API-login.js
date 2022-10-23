@@ -14,39 +14,27 @@ userData()
 let userData = async () => {
   let uemail = document.getElementById('email2').value;
   let pwd = document.getElementById('pword2').value;
-  let role = document.getElementById('role').value;
+  
 
   let response = await fetch(USERS);
   let users = await response.json();
-  let obj = users.find(o => o.role === 'admin')
   
-if(obj.role === role){
-  let cekData = 
-        users.some(user =>
-        user.email == uemail && 
-        user.password == pwd &&
-        user.role == role
-        );
-        if(cekData){
-          location.href="dashboard-admin.html"
-        }
-        else{
-          alert("Incorrect Login Credentials")
-        }
+  let cekData = users.find((x)=> x.email === uemail && x.password === pwd)
   
-} else{
-  let cekData = 
-  users.some(user =>
-    user.email == uemail && 
-    user.password == pwd &&
-    user.role == role
-    );
-    if(cekData){
+  if(cekData){
+    if(cekData.role === "admin"){
+      let parsedLS = JSON.stringify(cekData)
+      localStorage.setItem('USER_ID', parsedLS)
+      location.href="dashboard-admin.html"
+            
+    } else{
+      let parsedLS = JSON.stringify(cekData)
+      localStorage.setItem('USER_ID', parsedLS)
       location.href="home.html"
+       
     }
-    else{
-      alert("Incorrect Login Credentials")
-    }
-}
-  
+  }else{
+    alert("INCORRECT LOGIN CREDENTIALS")
+  }
+    
 }
