@@ -34,8 +34,6 @@ const getPosts = async url => {
                   <p class="card-text">
                     ${x.content}
                   </p>
-                  <button type="button" class="btn btn-success btn-sm">Show</button>
-              <button type="button" class="btn btn-outline-success btn-sm">Hide</button>
                 </div>
               </div>
                 `;
