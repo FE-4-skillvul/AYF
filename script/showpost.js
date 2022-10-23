@@ -61,6 +61,7 @@ const getPostsBySearch = async url => {
         const searchValue = searchBar.value;
         if(searchValue){
           articles.find((x)=> {
+            if(x.publish === true){
           if(x.title.includes(searchValue)){
             const articleElement = document.createElement("div");
             articleElement.innerHTML = `
@@ -75,8 +76,8 @@ const getPostsBySearch = async url => {
                 `;
                 showContent.appendChild(articleElement);
             }
+          }
         })}
-        
       });
     };
 
