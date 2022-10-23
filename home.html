@@ -34,8 +34,8 @@
             </li>
            
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <form class="d-flex" id="search">
+            <input class="form-control me-2" type="search" id="searchBar" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-light" type="submit">Search</button>
           </form>
         </div>
@@ -61,6 +61,7 @@
           <form id="form">
             <input class="input-title" type="text" name="title" id="title" placeholder="Masukkan judul artikel">
             <textarea class="input-articles" name="content" id="content" cols="30" rows="10" placeholder="Masukkan artikel disini"></textarea>
+            <input type="hidden" name="publish" value="false">
             <div class="text-end">
             <button type="submit" id="submit" class="btn btn-dark"><i class="fa-solid fa-plus"></i></button>
             </div>
@@ -68,41 +69,7 @@
       </div>
     </div>
    </div>
-    <div class="card w-75 card border-success mb-3">
-        <div class="card-body">
-        <h5 class="card-title">Lisa Blackpink</h5>
-        <h6>Date</h6>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-success">Share</a>
-        </div>
-    </div>
-
-    <div class="card w-75 card border-success mb-3">
-      <div class="card-body">
-      <h5 class="card-title">Lisa Blackpink</h5>
-      <h6>Date</h6>
-      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      <a href="#" class="btn btn-success">Share</a>
-      </div>
-  </div>
-
-  <div class="card w-75 card border-success mb-3">
-    <div class="card-body">
-    <h5 class="card-title">Lisa Blackpink</h5>
-    <h6>Date</h6>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-success">Share</a>
-    </div>
-  </div>
-
-  <div class="card w-75 card border-success mb-3">
-    <div class="card-body">
-    <h5 class="card-title">Lisa Blackpink</h5>
-    <h6>Date</h6>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-success">Share</a>
-    </div>
-</div>
+   <div id="showContent"></div>
 
 </div>
 <!-- akhir card --> 
@@ -118,7 +85,7 @@
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
  <script src="script/script.js"></script>
  <script src="script/addpost.js"></script>
- <script src="script/see.js"></script>
+ <script src="script/showpost.js"></script>
  <script src="https://kit.fontawesome.com/185cf9920d.js" crossorigin="anonymous"></script>
 </body>
 </html>

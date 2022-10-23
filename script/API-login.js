@@ -20,7 +20,7 @@ let userData = async () => {
   let users = await response.json();
   
   let cekData = users.find((x)=> x.email === uemail && x.password === pwd)
-  console.log(cekData)
+  
   if(cekData){
     if(cekData.role === "admin"){
       let parsedLS = JSON.stringify(cekData)

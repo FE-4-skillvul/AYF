@@ -19,6 +19,7 @@ let form = document.getElementById('form');
     }).then(res => res.json())
         .then(data => console.log(data))
         .then(alert("Threads Berhasil Dibuat!"))
+        .then(location.href="home.html")
           .catch(err => console.log(err))
   });
 

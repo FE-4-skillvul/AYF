@@ -21,16 +21,16 @@
                     <h5 class="card-title mb-3">Registration</h5>
                 <form action="" id="form">
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com" required minlength="8">
                         <label for="floatingInput">Email address</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="username" class="form-control" name="username" id="uname" placeholder="Username">
+                        <input type="username" class="form-control" name="username" id="uname" placeholder="Username" required minlength="5">
                         <label for="floatingUname">Username</label>
                     </div>
                     <input type="hidden" id="role" name="role" value="user">
                     <div class="form-floating mb-3">
-                        <input type="password" class="form-control" name="password" id="pword" placeholder="Password">
+                        <input type="password" class="form-control" name="password" id="pword" placeholder="Password" required minlength="8">
                         <label for="floatingPassword">Password</label>
                     </div>
                     <button type="submit" class="btn btn-success">Register</button>
