@@ -93,7 +93,7 @@ function updatePublish(userId, id){
     },
   })
     .then((response) => response.json())
-    .then((json) => console.log(json));
+    .then(alert("APPROVED!"));
 }
 
 
