@@ -1,5 +1,5 @@
 const API_URL1 = 'https://63496bd50b382d796c86192b.mockapi.io/';
-const POSTS = API_URL1+'users'
+const POSTS = API_URL1+'users?page=1&limit=10'
 
 //DOM
 const showContent = document.getElementById("showContent");
