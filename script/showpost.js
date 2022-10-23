@@ -9,6 +9,7 @@ const searchBar = document.getElementById("searchBar");
 const searchValue = searchBar.value;
 const createBtn = document.getElementById("ButtonPopUp");
 const copy = document.getElementById("copy");
+const hai = document.getElementById("hai")
 //FUNCTION
 const getPosts = async url => {
     fetch(url)
@@ -61,6 +62,7 @@ const getPostsBySearch = async url => {
         const searchValue = searchBar.value;
         if(searchValue){
           articles.find((x)=> {
+            if(x.publish === true){
           if(x.title.includes(searchValue)){
             const articleElement = document.createElement("div");
             articleElement.innerHTML = `
@@ -75,8 +77,8 @@ const getPostsBySearch = async url => {
                 `;
                 showContent.appendChild(articleElement);
             }
+          }
         })}
-        
       });
     };
 
@@ -94,10 +96,15 @@ search.addEventListener('submit', (e) => {
 
   function isStorageExist() {
     const cekLs = localStorage.getItem('USER_ID');
+    const parseLS = JSON.parse(cekLs)
     if(cekLs === null){
       createBtn.innerText = "Login to create an article"
       createBtn.addEventListener("click", function() {
         location.href = "login.html";
       });
+    }else{
+      hai.innerHTML = `
+      <a class="nav-link active" aria-current="page" href="#" style="color: white;">Hello!, ${parseLS.username}</a>
+      `
     }
   }
